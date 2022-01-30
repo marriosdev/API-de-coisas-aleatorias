@@ -7,7 +7,7 @@ use App\Helpers\CrawlerHelper;
 class NoticiaModel
 {
     /**
-     * @return Array|Bool 
+     * @return Array|Bool $result
      */
     public function buscarAtuais()
     {
