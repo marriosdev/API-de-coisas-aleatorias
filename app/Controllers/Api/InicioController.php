@@ -2,7 +2,7 @@
 
 namespace App\Controllers\Api;
 
-use App\Services\Response;
+use App\Services\Api\Response;
 
 class InicioController
 {
