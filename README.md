@@ -1,4 +1,4 @@
-# API-de-coisa-aleatorias
+# API-de-coisas-aleatorias
 
 Quando eu tiver tempinho, crio um doc massinha
 
