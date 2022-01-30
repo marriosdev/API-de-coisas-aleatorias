@@ -1,6 +1,6 @@
 # API-de-coisas-aleatorias
 
-Quando eu tiver tempinho, crio um doc massinha
+Quando eu tiver um tempinho, crio um doc massinha
 
 Podem colaborar se quiserem ;)
 
