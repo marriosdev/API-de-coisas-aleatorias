@@ -2,8 +2,6 @@
 
 namespace App\Controllers\Api;
 
-use App\Http\Api\Response;
-use App\Services\Api\Response as ApiResponse;
 use App\Services\NoticiaService;
 
 class NoticiaController
