@@ -1,14 +1,9 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-        "This file is @generated automatically"
-    ],
-    "content-hash": "dc65b9b77b91746af6e0beb5f8d93193",
     "packages": [
         {
             "name": "marrios/router",
             "version": "v2.0.0",
+            "version_normalized": "2.0.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/edmariooliver/Router.git",
@@ -23,7 +18,9 @@
             "require": {
                 "php": ">=7.4"
             },
+            "time": "2022-05-14T05:02:55+00:00",
             "type": "library",
+            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "Marrios\\Router\\": "src/"
@@ -49,16 +46,9 @@
                 "issues": "https://github.com/edmariooliver/Router/issues",
                 "source": "https://github.com/edmariooliver/Router/tree/v2.0.0"
             },
-            "time": "2022-05-14T05:02:55+00:00"
+            "install-path": "../marrios/router"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
-    "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "dev": true,
+    "dev-package-names": []
 }

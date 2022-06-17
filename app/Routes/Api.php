@@ -1,14 +1,10 @@
 <?php
 
-$router = new \Bramus\Router\Router();
+use Marrios\Router\HttpRouter;
 
-/**
- * ROTAS
- */
-$router->get('/',                       API_NAMESPACE."\InicioController@index");
-$router->get('/api',                    API_NAMESPACE."\InicioController@index");
+$router = new HttpRouter();
 
-$router->get('/api/noticias/buscar',    API_NAMESPACE."\NoticiaController@buscar");
-
-//Vamos!
-$router->run();
+// Set route
+$router->get("", [App\Controllers\Api\InicioController::class, "index"])->run();
+$router->get("/api/noticias/todas", [App\Controllers\Api\NoticiaController::class, "buscarTodas"])->run();
+$router->notFound();

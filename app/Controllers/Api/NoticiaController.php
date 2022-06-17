@@ -2,24 +2,24 @@
 
 namespace App\Controllers\Api;
 
-use App\Models\NoticiaModel;
-use App\Services\Api\Response;
+use App\Http\Api\Response;
+use App\Services\Api\Response as ApiResponse;
+use App\Services\NoticiaService;
 
 class NoticiaController
 {
+    private NoticiaService $service;
+    
+    public function __construct()
+    {
+        $this->service = new NoticiaService();        
+    }
+
     /**
      * 
      */
-    public function buscar()
+    public function buscarTodas()
     {
-        $noticia        = new NoticiaModel();
-        $noticiasAtuais = $noticia->buscarAtuais();
-        
-        if(! $noticiasAtuais)
-        {
-            return new Response(500, ["msg"=>"Ocorreu um erro interno!"]);
-        }
-        
-        return new Response(200, $noticiasAtuais);
+        return Capture(200, $this->service->buscarTodas());
     }
 }

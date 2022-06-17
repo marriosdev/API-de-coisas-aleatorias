@@ -1,0 +1,23 @@
+{
+    "name": "marrios/router",
+    "description": "Route manager",
+    "keywords": ["Router", "MVC", "Manager"],
+    "license": "GPL-3.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Marrios\\Router\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marrios Dev",
+            "email": "edmariooliver@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

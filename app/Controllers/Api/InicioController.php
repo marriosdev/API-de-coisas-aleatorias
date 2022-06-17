@@ -8,6 +8,6 @@ class InicioController
 {
     public function index()
     {
-        return new Response(200, ["Repositorio"=>"https://github.com/edmariooliver/API-de-coisa-aleatorias"]);
+        echo json_encode(["Repositorio"=>"https://github.com/edmariooliver/API-de-coisa-aleatorias"]);
     }
 }
