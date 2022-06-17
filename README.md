@@ -6,4 +6,4 @@ Podem colaborar se quiserem ;)
 
 Estou usando uma lib para configurar as rotas.
 O link do repo:
-https://github.com/bramus/router
+https://github.com/edmariooliver/Router
