@@ -14,6 +14,9 @@ function Capture($expected, $content)
     ]));
 }
 
+/**
+ * Monta uma resposta no controller 
+ */
 function Response($code, $content) {
     header("HTTP/1.1 ".$code);
     header('Content-Type: application/json');
