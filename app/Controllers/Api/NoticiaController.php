@@ -3,6 +3,7 @@
 namespace App\Controllers\Api;
 
 use App\Services\NoticiaService;
+use Marrios\Router\Entities\RouteParameters;
 
 class NoticiaController
 {
@@ -19,5 +20,11 @@ class NoticiaController
     public function buscarTodas()
     {
         return Capture(200, $this->service->buscarTodas());
+    }
+
+    public function buscarPorId(RouteParameters $routeParameters)
+    {
+        
+        return Capture(200, $this->service->buscarPorId($routeParameters->id));
     }
 }

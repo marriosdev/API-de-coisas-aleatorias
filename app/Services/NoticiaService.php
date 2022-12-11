@@ -2,8 +2,7 @@
 
 namespace App\Services;
 
-use App\Repository\NoticiaRepository;
-use App\Model\Noticia;
+use App\Repositories\NoticiaRepository;
 
 class NoticiaService 
 {
@@ -17,6 +16,12 @@ class NoticiaService
     public function buscarTodas()
     {   
         $noticias = $this->repository->buscarTodas();
+        return ($noticias) ? json_encode($noticias) : BAD_REQUEST;
+    }
+
+    public function buscarPorId(int $id)
+    {
+        $noticias = $this->repository->buscarPorId($id);
         return ($noticias) ? json_encode($noticias) : BAD_REQUEST;
     }
 }

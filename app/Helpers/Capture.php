@@ -3,7 +3,7 @@
 /**
  * Captura a resposta do service e entrega a melhor resposta para o cliente no momento
  */
-function Capture($expected, $content) 
+function Capture($expected, $content)
 {
     if(!is_int($content)) {
         return Response($expected, $content);
